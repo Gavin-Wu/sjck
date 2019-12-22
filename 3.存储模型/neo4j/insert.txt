@@ -1,0 +1,17 @@
+neo4j-admin import --mode=csv --database=graph.db 
+--nodes:movie dataImport\movieHeader.csv,dataImport\movieCsv.csv
+--nodes:actor dataImport\actorHeader.csv,dataImport\actorCsv.csv
+--nodes:director dataImport\directorHeader.csv,dataImport\directorCsv.csv
+--nodes:genre dataImport\genreHeader.csv,dataImport\genreCsv.csv
+--nodes:language dataImport\languageHeader.csv,dataImport\languageCsv.csv
+--nodes:studio dataImport\studioHeader.csv,dataImport\studioCsv.csv
+
+--relationships:act dataImport\actHeader.csv,dataImport\actCsv.csv 
+--relationships:direct dataImport\directHeader.csv,dataImport\directCsv.csv 
+--relationships:make dataImport\makeHeader.csv,dataImport\makeCsv.csv 
+--relationships:speak dataImport\speakHeader.csv,dataImport\speakCsv.csv 
+--relationships:style dataImport\styleHeader.csv,dataImport\styleCsv.csv 
+
+
+
+neo4j-admin import --mode=csv --database=graph.db --nodes:movie dataImport\movieHeader.csv,dataImport\movieCsv.csv --nodes:actor dataImport\actorHeader.csv,dataImport\actorCsv.csv --nodes:director dataImport\directorHeader.csv,dataImport\directorCsv.csv --nodes:genre dataImport\genreHeader.csv,dataImport\genreCsv.csv --nodes:language dataImport\languageHeader.csv,dataImport\languageCsv.csv --nodes:studio dataImport\studioHeader.csv,dataImport\studioCsv.csv --relationships:act dataImport\actHeader.csv,dataImport\actCsv.csv --relationships:direct dataImport\directHeader.csv,dataImport\directCsv.csv --relationships:make dataImport\makeHeader.csv,dataImport\makeCsv.csv --relationships:speak dataImport\speakHeader.csv,dataImport\speakCsv.csv --relationships:style dataImport\styleHeader.csv,dataImport\styleCsv.csv 
